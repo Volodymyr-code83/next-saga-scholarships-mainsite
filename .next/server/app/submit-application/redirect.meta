@@ -1,0 +1,5 @@
+{
+  "headers": {
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(routes)/layout,_N_T_/(routes)/(dashboard)/layout,_N_T_/(routes)/(dashboard)/submit-application/layout,_N_T_/(routes)/(dashboard)/submit-application/(success)/layout,_N_T_/(routes)/(dashboard)/submit-application/(success)/redirect/layout,_N_T_/(routes)/(dashboard)/submit-application/(success)/redirect/page,_N_T_/submit-application/redirect"
+  }
+}

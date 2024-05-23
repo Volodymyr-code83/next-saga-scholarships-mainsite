@@ -48,7 +48,7 @@ const NewSection = () => {
         <h2 className="text-[#131E42] text-4xl md:text-5xl font-semibold md:px-20 mb-10">
           News
         </h2>
-        <div className=" grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 md:gap-14 md:px-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-14 md:px-20">
           {newsData.map((player, index) => ( 
           <div key={index} className="w-full flex flex-col items-start mb-12 md:mb-0">
             <div className="w-full h-[500px] relative rounded-xl overflow-hidden group">

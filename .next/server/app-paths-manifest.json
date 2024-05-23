@@ -1,5 +1,12 @@
 {
-  "/not-found": "app/not-found.js",
+  "/_not-found": "app/_not-found.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(routes)/(dashboard)/create-account/page": "app/(routes)/(dashboard)/create-account/page.js",
+  "/(routes)/(dashboard)/submit-application/(success)/redirect/page": "app/(routes)/(dashboard)/submit-application/(success)/redirect/page.js",
+  "/(routes)/(dashboard)/login/page": "app/(routes)/(dashboard)/login/page.js",
+  "/(routes)/(landing)/all-news/page": "app/(routes)/(landing)/all-news/page.js",
+  "/(routes)/(dashboard)/submit-application/page": "app/(routes)/(dashboard)/submit-application/page.js",
+  "/(routes)/(landing)/about-us/page": "app/(routes)/(landing)/about-us/page.js",
+  "/(routes)/(landing)/athletes/page": "app/(routes)/(landing)/athletes/page.js",
   "/(routes)/(landing)/page": "app/(routes)/(landing)/page.js"
 }
