@@ -26,6 +26,14 @@ const ServiceSection = () => {
     text: "",
   });
 
+  const [s0, setS0] = useState<string>("");
+  const [s1, setS1] = useState<string>("");
+  const [s2, setS2] = useState<string>("");
+  const [s3, setS3] = useState<string>("");
+  const [s4, setS4] = useState<string>("");
+  const [s5, setS5] = useState<string>("");
+
+
   useEffect(() => {
     const userUid = 'OYb1VwaGzAdADogvJkvz3GZ6l0g1';
     const pageDataRef = ref(db, `adminData/${userUid}`);
@@ -39,6 +47,12 @@ const ServiceSection = () => {
           imageUrl: data.services.service_description.imageUrl,
           text: data.services.service_description.text,
         });
+        setS0(data.services.service_information[0].imageUrl);
+        setS1(data.services.service_information[1].imageUrl);
+        setS2(data.services.service_information[2].imageUrl);
+        setS3(data.services.service_information[3].imageUrl);
+        setS4(data.services.service_information[4].imageUrl);
+        setS5(data.services.service_information[5].imageUrl);
       }
     });
 
@@ -81,7 +95,7 @@ const ServiceSection = () => {
             <div className="w-full flex flex-col md:flex-row items-center justify-between h-fit md:h-full gap-4 md:gap-6">
               <div className="w-full h-fit md:h-full py-16 md:py-0 border border-[#131E42] rounded-xl flex flex-col items-center">
                 <div className=" flex items-center justify-center bg-[#E9E9E9] rounded-full aspect-square h-24 md:h-28 w-24 md:w-28 md:mt-20">
-                  <Image width={52} height={52} src="/home.png" alt="Home" />
+                  <Image width={52} height={52} src={s0} alt="Home" />
                 </div>
                 <h3 className="text-2xl px-5 font-medium text-center mt-4 text-[#131E42]">
                   Admission to college/ High School
@@ -89,7 +103,7 @@ const ServiceSection = () => {
               </div>
               <div className="w-full h-fit py-16 md:py-0 md:h-full border border-[#131E42] rounded-xl flex flex-col items-center">
                 <div className=" flex items-center justify-center bg-[#E9E9E9] rounded-full aspect-square md:mt-20 h-24 md:h-28 w-24 md:w-28">
-                  <Image width={52} height={52} src="/books.png" alt="Books" />
+                  <Image width={52} height={52} src={s1} alt="Books" />
                 </div>
                 <h3 className="text-2xl px-5 font-medium text-center mt-4 text-[#131E42]">
                   Preparation for SAT/TOFL
@@ -97,7 +111,7 @@ const ServiceSection = () => {
               </div>
               <div className="w-full py-16 md:py-0 h-fit md:h-full border border-[#131E42] rounded-xl flex flex-col items-center">
                 <div className=" flex items-center justify-center bg-[#E9E9E9] rounded-full aspect-square md:mt-20 h-24 md:h-28 w-24 md:w-28">
-                  <Image width={36} height={36} src="/doc.png" alt="Document" />
+                  <Image width={36} height={36} src={s2} alt="Document" />
                 </div>
                 <h3 className="text-2xl px-5 font-medium text-center mt-4 text-[#131E42]">
                   Visa Application
@@ -110,7 +124,7 @@ const ServiceSection = () => {
                   <Image
                     width={52}
                     height={52}
-                    src="/group.png"
+                    src={s3}
                     alt="Registration"
                   />
                 </div>
@@ -121,7 +135,7 @@ const ServiceSection = () => {
               </div>
               <div className="w-full py-16 md:py-0 h-fit md:h-full border border-[#131E42] rounded-xl flex flex-col items-center">
                 <div className=" flex items-center justify-center bg-[#E9E9E9] rounded-full aspect-square md:mt-20 h-24 md:h-28 w-24 md:w-28">
-                  <Image width={52} height={52} src="/dollar.png" alt="Money" />
+                  <Image width={52} height={52} src={s4} alt="Money" />
                 </div>
                 <h3 className="text-2xl px-5 font-medium text-center mt-4 text-[#131E42]">
                   Scholarship <br /> Negotiation
@@ -132,7 +146,7 @@ const ServiceSection = () => {
                   <Image
                     width={36}
                     height={36}
-                    src="/megaphone.png"
+                    src={s5}
                     alt="Promotion"
                   />
                 </div>

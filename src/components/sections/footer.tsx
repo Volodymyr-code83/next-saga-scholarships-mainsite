@@ -15,7 +15,7 @@ const FooterSection = () => {
                 quality={100}
                 className=" object-contain"
                 fill
-                src="https://saga-scholarship.vercel.app/_next/image?url=%2Flogo.png&w=1920&q=100"
+                src={"/logo.png"}
                 alt="Logo"
               />
             </div>

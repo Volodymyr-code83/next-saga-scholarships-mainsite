@@ -12,7 +12,7 @@ const LoginPage = () => {
             quality={100}
             className=" object-contain"
             fill
-            src="/logo.png"
+            src={"/logo.png"}
             alt="Logo"
           />
         </div>
