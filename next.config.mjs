@@ -4,7 +4,7 @@ const nextConfig = {
         domains: ['saga-scholarship.vercel.app'],
     },
     // Uncomment if needed
-    // output: "export",
+    output: "export",
 };
 
 export default nextConfig;
