@@ -1,3 +1,5 @@
 {
+  "/not-found": "app/not-found.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/(routes)/(landing)/page": "app/(routes)/(landing)/page.js"
 }
