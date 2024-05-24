@@ -168,12 +168,12 @@ const AboutSection = () => {
                       <h3 className=" text-white text-2xl font-medium">
                         {player.name}
                       </h3>
-                      <Button
+                      {/* <Button
                         className="mt-4 bg-transparent border border-white text-white"
                         variant="outline"
                       >
                         Learn More
-                      </Button>
+                      </Button> */}
                     </div>
                   </div>
                 </div>
@@ -196,12 +196,12 @@ const AboutSection = () => {
                       <h3 className=" text-white text-2xl font-medium">
                         {player.name}
                       </h3>
-                      <Button
+                      {/* <Button
                         className="mt-4 bg-transparent border border-white text-white"
                         variant="outline"
                       >
                         Learn More
-                      </Button>
+                      </Button> */}
                     </div>
                   </div>
                 </div>
