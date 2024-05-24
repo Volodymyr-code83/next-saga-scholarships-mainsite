@@ -46,6 +46,7 @@ interface playersDataType {
 
 const AthletesPage = () => {
   const [playersData, setPlayersData] = useState<playersDataType[]>([]);
+  const [playersTitle, setPlayersTitle] = useState<string>("");
 
   useEffect(() => {
     const userUid = 'OYb1VwaGzAdADogvJkvz3GZ6l0g1';
@@ -56,6 +57,7 @@ const AthletesPage = () => {
       console.log("data_______", data.players[0]);
       if (data) {
         setPlayersData(data.players);
+        setPlayersTitle(data.playersTitle);
       }
     });
 
@@ -69,8 +71,7 @@ const AthletesPage = () => {
       <Wrapper>
         <div className="flex flex-col items-center w-full justify-center mt-12">
           <h1 className="text-[#131E42] font-medium 2xl:font-semibold text-3xl xl:text-6xl 2xl:text-4xl md:-mt-0 text-center w-full md:max-w-3xl mb-5 md:mb-10">
-            Student-athletes who received our Management and search for
-            scholarships in American universities
+            {playersTitle}
           </h1>
           <Select>
             <SelectTrigger className="w-[240px]">
